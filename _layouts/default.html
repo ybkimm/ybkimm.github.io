@@ -23,7 +23,7 @@
 
         <section class="content">
             <article>
-                {% if page.title %}
+                {% if page.title and page.url != "/404.html" %}
                     <h1 class="is-title">{{ page.title }}</h1>
                     {% if page.url != "/" %}
                         <h2 class="is-time">{{ page.date | date: '%Y-%m-%d' }}</h2>
