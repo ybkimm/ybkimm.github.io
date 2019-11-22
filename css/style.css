@@ -1,0 +1,63 @@
+body {
+    max-width: 50rem;
+    margin: 3rem auto;
+    padding: 0 10px;
+    background: #000;
+    color: #FFF;
+}
+
+nav {
+    margin-bottom: 4rem;
+}
+
+nav .nav-left,
+nav .nav-right {
+    display: inline-block;
+}
+
+nav .nav-right {
+    float: right;
+}
+
+article {
+    line-height: 1.6;
+}
+
+footer {
+    margin: 4rem 0;
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+h1.is-title {
+    font-size: 3.75rem;
+    letter-spacing: -0.5px;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 200;
+}
+
+h2 {
+    font-size: 2.125rem;
+    font-weight: 400;
+    letter-spacing: 0.25px;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+a {
+    color: #FFF;
+}
+
+code {
+    font-size: 1rem;
+}

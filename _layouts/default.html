@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>{% if page.title %}{{ page.title }}{% else %}Untitled{% endif %}</title>
+
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <section class="sidebar">
+            <header>
+                <nav class="nav-global">
+                    <div class="nav-left">
+                        <a class="nav-item" href="/">Home</a>
+                    </div>
+
+                    <div class="nav-right">
+                        <a class="sns is-github" href="https://github.com/{{site.github_username}}">github</a>
+                    </div>
+                </nav>
+            </header>
+        </section>
+
+        <section class="content">
+            <article>
+                {% if page.title %}
+                    <h1 class="is-title">{{ page.title }}</h1>
+                {% endif %}
+                {{ content }}
+            </article>
+
+            <footer>
+                <p>&copy; Yongbin Kim</p>
+            </footer>
+        </section>
+    </body>
+</html>
