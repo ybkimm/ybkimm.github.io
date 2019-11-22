@@ -1,0 +1,12 @@
+# Site Settings
+title:              "ybkimm"
+email:              "iam@yongbin.kim"
+baseurl:            ""
+url:                "https://yongbin.kim"
+paginate:           5
+github_username:    "ybkimm"
+description:        ""
+
+# Build Settings
+markdown: kramdown
+
