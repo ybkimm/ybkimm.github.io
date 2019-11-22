@@ -24,9 +24,13 @@ github_username: ybkimm
 
 # Build settings
 safe: true
+
 collections:
     pages:
         output: true
+
+timezone: Asia/Seoul
+
 exclude:
     - .sass-cache/
     - .jekyll-cache/
