@@ -38,9 +38,49 @@ go get -u github.com/jsha/minica
 
 만약 Go 언어를 사용하지 않으셔서 go 명령어를 쓸 수 없는 경우라면 제가 빌드한 바이너리를 아래 링크에서 다운로드 하실 수 있습니다.
 
-* Linux: [amd64](/assets/files/2019-12-02-https-for-localhost-with-minica/linux_amd64/minica), [386](/assets/files/2019-12-02-https-for-localhost-with-minica/linux_386/minica), [arm](/assets/files/2019-12-02-https-for-localhost-with-minica/linux_arm/minica), [arm64](/assets/files/2019-12-02-https-for-localhost-with-minica/linux_arm64/minica)
-* Windows: [amd64](/assets/files/2019-12-02-https-for-localhost-with-minica/windows_amd64/minica.exe), [386](/assets/files/2019-12-02-https-for-localhost-with-minica/windows_386/minica.exe)
-* macOS: [amd64](/assets/files/2019-12-02-https-for-localhost-with-minica/darwin_amd64/minica)
+<div id="minica-assets">
+    <ul>
+        <li><p>릴리즈를 가져오고 있습니다...</p></li>
+    </ul>
+</div>
+<script defer>
+    const insertAssets = (release) => {
+        const el = document.getElementById('minica-assets')
+        if (release == null) {
+            el.innerHTML = '<ul><li><p>릴리즈를 가져오지 못했습니다. <a href="https://github.com/ybkimm/minica/releases">이 링크</a>에서 확인해주세요.</p></li></ul>'
+        } else {
+            const ul = document.createElement('ul')
+            let asset
+            release.assets.forEach((asset) => {
+                let li = document.createElement('li')
+                let anchor = document.createElement('a')
+                anchor.innerText = asset.name
+                anchor.setAttribute('href', asset.browser_download_url)
+                li.appendChild(anchor)
+                ul.appendChild(li)
+            })
+            el.parentNode.replaceChild(ul, el)
+        }
+    }
+    document.addEventListener('DOMContentLoaded', () => {
+        var request = new XMLHttpRequest();
+        request.open('GET', 'https://api.github.com/repos/ybkimm/minica/releases/latest', true);
+        Object.assign(request, {
+            onload: () => {
+                if (request.status == 200) {
+                    let resp = JSON.parse(request.response)
+                    insertAssets(resp)
+                } else {
+                    insertAssets(null)
+                }
+            },
+            onerror: () => {
+                insertAssets(null)
+            }
+        })
+        request.send();
+    })
+</script>
 
 ![](/assets/images/2019-12-02-https-for-localhost-with-minica/minica-help.png)
 
