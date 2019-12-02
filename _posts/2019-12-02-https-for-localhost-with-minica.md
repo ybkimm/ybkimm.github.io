@@ -38,9 +38,9 @@ go get -u github.com/jsha/minica
 
 만약 Go 언어를 사용하지 않으셔서 go 명령어를 쓸 수 없는 경우라면 제가 빌드한 바이너리를 아래 링크에서 다운로드 하실 수 있습니다.
 
-* Linux: [amd64](/assets/downloads/2019-12-02-https-for-localhost-with-minica/linux-amd64/minica), [386](/assets/downloads/2019-12-02-https-for-localhost-with-minica/linux-386/minica), [arm](/assets/downloads/2019-12-02-https-for-localhost-with-minica/linux-arm/minica), [arm64](/assets/downloads/2019-12-02-https-for-localhost-with-minica/linux-arm64/minica)
-* Windows: [amd64](/assets/downloads/2019-12-02-https-for-localhost-with-minica/windows-amd64/minica.exe), [386](/assets/downloads/2019-12-02-https-for-localhost-with-minica/windows-386/minica.exe)
-* macOS: [amd64](/assets/downloads/2019-12-02-https-for-localhost-with-minica/darwin-amd64/minica)
+* Linux: [amd64](/assets/files/2019-12-02-https-for-localhost-with-minica/linux_amd64/minica), [386](/assets/files/2019-12-02-https-for-localhost-with-minica/linux_386/minica), [arm](/assets/files/2019-12-02-https-for-localhost-with-minica/linux_arm/minica), [arm64](/assets/files/2019-12-02-https-for-localhost-with-minica/linux_arm64/minica)
+* Windows: [amd64](/assets/files/2019-12-02-https-for-localhost-with-minica/windows_amd64/minica.exe), [386](/assets/files/2019-12-02-https-for-localhost-with-minica/windows_386/minica.exe)
+* macOS: [amd64](/assets/files/2019-12-02-https-for-localhost-with-minica/darwin_amd64/minica)
 
 ![](/assets/images/2019-12-02-https-for-localhost-with-minica/minica-help.png)
 
